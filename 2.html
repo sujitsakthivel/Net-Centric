@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2</title>
+    <style>
+        .sec{
+            background-color: rgb(117, 115, 115);
+        }
+
+    </style>
+    <script>
+        function check()
+        {
+            var emailID = document.Form.Email.value;
+            atpos = emailID.indexOf("@");
+            dotpos = emailID.lastIndexOf(".")
+            if(atpos<1||((dotpos-atpos)<2)){
+                alert("Please enter correct email ID")
+            }
+            
+                alert("Name: "+document.Form.FirstName.value+" "+document.Form.LastName.value+ "\n" +"Email: "+document.Form.Email.value);
+        }
+    </script>
+
+</head>
+<body>
+    <b><h1 >Recomendation</h1></b>
+    
+    <div class="sec">
+            <p>Applicant Name  : S Sujit Subramanian</p><br/>
+            <p>Applying to     : Story book university office of graduation and welth science</p><br/>
+            <p>Recomentation   : SenthilKumar T</p><br/>
+    </div>
+     
+
+    <h2 style="color:brown;">Applicant Information</h2> 
+    <p>Applicant name : S Sujit Subramanian</p><br>
+    <b><p>Do you wish to waive your right to examine this letter of recomendation?</p><br></b>
+    <b><p >[x] I wave my right to access my reoprt</p><b><br>
+    <p >[ ] I do not wave my right to access my reoprt</p><br>
+    <p>Signed By : S Sujit Subramanian</p><br>
+
+    <h2>Recommender Information</h2>
+    <form name="Form"> 
+        <label for="Prefix">Prefix:</label><br>
+        <select name="prefix" id="prefix">  
+            <option value="Dr">Dr.</option>
+            <option value="Ms">Ms.</option>
+            <option value="Mr">Mr.</option>
+            <option value="Mrs">Mrs.</option>
+        </select><br/><br>
+        
+        <label>First Name:</label><br> 
+        <input type="text"  name="FirstName" required/><br><br>
+        <label>Last Name:</label><br> 
+        <input type="text"  name="LastName" required/><br><br>
+        <label>Organization:</label><br> 
+        <input type="text"  name="Organization" required/><br><br>
+        <label>Title:</label><br> 
+        <input type="text" name="Title" required/><br><br>
+        <label>Relationship to student:</label><br> 
+        <input type="text" name="Relation student" required /><br><br>
+        <label>Telephone:</label><br> 
+        <input type="number" name="phone" required/><br><br>
+        <label>Email:</label><br> 
+        <input type="text" name="Email" required/><br><br>
+        
+        <h1>Would you admit the applicant</h1>
+        <input type="radio" >
+        <label class="container">Assurdly
+        <span class="checkmark"></span>
+        </label><br>
+        
+        <input type="radio">
+        <label class="container">Probably
+        <span class="checkmark"></span>
+        </label><br>
+
+        
+        <input type="radio">
+        <label class="container">Possibly
+        <span class="checkmark"></span>
+        </label><br>
+
+        
+        <input type="radio">
+        <label class="container">No
+        <span class="checkmark"></span></label><br>     
+
+        <h2 style="color:red;">Submission</h2> 
+            <p>Access to recommendations is restricted to admitted students, and only after enrollment in this application's academic program.<br>
+            In place of your signature,please type your full legal name:
+            </p>
+            <input type="text" name="Name" required/><br><br>
+        <p>
+            <button name="Submit" onclick="check()" >Submit</button>
+            <button name="save" >Save for later</button>
+        </p><br>
+    </form>
+</body>
+</html>

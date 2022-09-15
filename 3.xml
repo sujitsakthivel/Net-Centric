@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-16"?>
+<!DOCTYPE Person [
+    <!ELEMENT Person (firstName,lastName,Organization,Title,Relationship,Telephone,Email,Admit,Sign)>
+    <!ELEMENT firstName (#PCDATA)>
+    <!ELEMENT lastName (#PCDATA)>
+    <!ELEMENT Organization (#PCDATA)>
+    <!ELEMENT Title (#PCDATA)>
+    <!ELEMENT Relationship (#PCDATA)>
+    <!ELEMENT Telephone (#PCDATA)>
+    <!ELEMENT Email (#PCDATA)>
+    <!ELEMENT Admit (#PCDATA)>
+    <!ELEMENT Sign (#PCDATA)>
+    <!ATTLIST Person prefix (DR|Mr|Mrs|Ms) #REQUIRED>
+]>
+<Person prefix="DR">
+	<firstName>Sujit</firstName>
+    <lastName>Subramanian</lastName>
+    <Organization>Amrita</Organization>
+    <Title>Student</Title>
+    <Relationship>Student</Relationship>
+    <Telephone>999</Telephone>
+    <Email>sujitsakthivel@gmail.com</Email>
+    <Admit>No</Admit>
+    <Sign>S Sujit Subramanian</Sign>
+</Person>
